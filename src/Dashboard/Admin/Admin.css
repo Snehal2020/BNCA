@@ -1,0 +1,42 @@
+.Adashboard{
+    margin-top: 70px;
+    position:relative;
+    /* z-index: -1; */
+    background-color: rgb(177, 179, 178);
+    top:80px;
+    margin-bottom: 110px;
+}
+
+#sidebar {
+    position: relative;
+    width: 250px;
+    height: 100%;
+    background-color: #dcd9d9;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#sidebar ul li {
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+#sidebar ul li:hover {
+    background-color: #555;
+}
+.submenu {
+    display: none;
+    padding-left: 20px;
+}
+.submenu ul li {
+    padding: 5px 10px;
+    color: #ccc;
+    cursor: pointer;
+}
+.submenu ul li:hover {
+    color: #fff;
+}

@@ -1,0 +1,96 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  width: 1280px;
+  border: 1px;
+  margin-bottom: 70px;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 1px solid #c4c3c3;
+  background: #ffffff;
+}
+
+.profile-card {
+  border: 0.6px solid rgb(148, 148, 148);
+  width: 25%;
+  height: 340px;
+  padding: 38px, 49px, 32px, 49px;
+}
+
+.profile-image img {
+    -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+  margin-top: 50px;
+  width: 172px;
+  height: 172px;
+  border-radius: 50%; 
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-info h3 {
+  margin-top: 10px;
+}
+
+.profile-info p {
+  color: #555;
+}
+
+.cta-section {
+  width: 50%;
+  height: 340px;
+  background-color: #6a5192; /* Adjust to match your purple */
+  color: white;
+  padding: 30px 20px;
+}
+
+.cta-section .cta-content {
+  padding-top: 100px;
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-section h2 {
+    font-family:"Inter", sans-serif;
+font-size: 24px;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.cta-section button {
+  background: white;
+  color: #800080;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-section button:hover {
+  background-color: #f0f0f0;
+}
