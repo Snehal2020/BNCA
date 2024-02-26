@@ -4,7 +4,6 @@ import Layout from '../../Components/Layout1/Layout';
 // import '../Admin/Admin.css';
 const Sidebar = () => {
   return (
- <Layout>
 
   <div className="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
     {/* Sidebar Start */}
@@ -47,7 +46,7 @@ const Sidebar = () => {
               </a>
             </li>
             <li className="sidebar-item">
-              <a className="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+              <a className="sidebar-link" href="/dashboard/admin/course" aria-expanded="false">
                 <span>
                   <i className="ti ti-alert-circle" />
                 </span>
@@ -185,7 +184,6 @@ const Sidebar = () => {
     </div>
   </div>
 
-    </Layout>
   );
 };
 

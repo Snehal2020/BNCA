@@ -48,7 +48,7 @@ const Admin_Dashboard = () => {
               </Link>
             </li>
             <li className="sidebar-item">
-              <a className="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+              <a className="sidebar-link" href="/dashboard/admin/course" aria-expanded="false">
                 <span>
                   <i className="ti ti-alert-circle" />
                 </span>
@@ -56,11 +56,11 @@ const Admin_Dashboard = () => {
               </a>
             </li>
             <li className="sidebar-item">
-              <a className="sidebar-link" href="./ui-card.html" aria-expanded="false">
+              <a className="sidebar-link" href="" aria-expanded="false">
                 <span>
                   <i className="ti ti-cards" />
                 </span>
-                <span className="hide-menu">Card</span>
+                <span className="hide-menu">Faculty/Student</span>
               </a>
             </li>
             <li className="sidebar-item">

@@ -29,6 +29,14 @@ code {
 }
 .left img{
   filter: brightness(50%);
+   height:454px;
+    filter:'brightness(50%)';
+    width:720px;
+}
+.right img{
+  height:454px;
+    filter:brightness(50%);
+    width:720px;
 }
 .text1{
   position: relative;
@@ -88,7 +96,6 @@ text-align: left;
 }
 
 
-/* footer */
 
 
 .footer{
@@ -102,7 +109,7 @@ border-color: #282829;
 display: flex;
 
 }
-/* one */
+
 .one{
 width: 25%;
 display: flex;
@@ -189,11 +196,11 @@ left: 30px;
 
 }
 
-/* two */
+
 
 .two{
   width: 25%;
-  /* border-width: 0px, 0px, 0px, 0px; */
+
   border-left: 1px solid black;
   border-right: 1px solid black;
 display: flex;
@@ -315,4 +322,79 @@ text-align: left;
   padding-right: 50px;
   padding-top: 20px;
   list-style: none;
+}
+
+
+
+/* Base styles - Applies to all devices including laptops */
+/* Your existing CSS goes here */
+
+/* Media query for tablets and below (screens smaller than 1024px wide) */
+@media (max-width: 1024px) {
+  .footer {
+    /* Make the footer's width and height responsive */
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .one, .two, .three {
+    /* Stack footer sections vertically on smaller screens */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    border: none; /* Remove side borders */
+  }
+
+  .main, .left img, .right img {
+    /* Adjust main content and images for smaller screens */
+    flex-direction: column; /* Stack elements vertically */
+    width: auto; /* Adjust width to fit smaller screens */
+    height: auto; /* Adjust height based on content */
+  }
+
+  .text1, .text2, .arct, .arc a {
+    /* Adjust text sizing and positioning for readability */
+    font-size: adjust as needed; /* Scale down font size */
+    position: adjust as needed; /* Adjust positioning to fit layout */
+  }
+
+  .subscribe-container, .info-container, .up1, .down {
+    /* Adjust layout of these containers for smaller screens */
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto; /* Allow containers to expand or contract based on content */
+    text-align: center; /* Center-align text for better readability */
+  }
+
+  .social-media, .credits {
+    /* Center-align these sections for consistency */
+    align-items: center;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  .bottum {
+    /* Adjust bottom links for smaller screens */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottum li {
+    /* Adjust spacing for list items */
+    padding: 10px; /* Reduce padding */
+  }
+}
+
+/* Further adjustments for mobile screens (less than 768px wide) */
+@media (max-width: 768px) {
+  .text1, .text2 {
+    /* Further reduce text sizes for mobile screens */
+    font-size: smaller; /* Adjust font size */
+  }
+
+  /* Add additional mobile-specific adjustments here */
 }

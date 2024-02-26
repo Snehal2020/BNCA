@@ -5,18 +5,23 @@ import './index.css';
 // import './styles.min.css';
 import './Portfolio_list.css';
 import './Details.css';
+import './Dashboard/Admin/Departments.css';
 import { BrowserRouter } from 'react-router-dom';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AuthProvider } from './Context/AuthContext';
+import { IdProvider } from './Context/FilterContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthProvider>
-   <BrowserRouter>
+  <IdProvider>
+  <BrowserRouter>
      <App />
   </BrowserRouter>
+  </IdProvider>
+  
   </AuthProvider>
  
 );

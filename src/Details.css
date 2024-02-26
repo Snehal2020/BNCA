@@ -67,7 +67,6 @@ width: 340px;
 }
 
 .image-gallery {
-    /* padding-left: 460px; */
     margin-left: 50px;
     margin-bottom: 70px;
     padding-bottom: 90px;
@@ -75,29 +74,60 @@ width: 340px;
     flex-direction: column;
     gap: 25px;
 }
-.second{
-   display: flex;
-   /* justify-content: space-evenly; */
-}
+
 .image-gallery .image-large {
     width: 845px;
     height: 562px;
 }
 
-.image-gallery .image-medium {
-    margin-right: 25px;
-    width: 410px;
-    height: 358px;
-    
-}
-
-.image-gallery .image-small {
-    width: 410px;
-    height: 358px;
-}
 
 .image-gallery img {
     width: 100%;
     display: block;
     object-fit: cover;
 }
+
+
+
+
+/* Base styles - Applies to all devices including laptops */
+/* Your existing CSS goes here */
+
+/* Responsive adjustments for screens smaller than 1024px */
+@media (max-width: 1024px) {
+    .course-container {
+        flex-direction: column;
+        align-items: center; /* Center-align items for a vertical layout */
+        max-width: 100%; /* Allow container to use full width */
+        padding: 0 20px; /* Add some padding on the sides */
+    }
+
+    .static, .text-section {
+        width: 100%; /* Full width for smaller screens */
+        padding-right: 0; /* Remove right padding as it's now full width */
+        margin-bottom: 30px; /* Adjust bottom margin for spacing */
+    }
+
+    .cont {
+        margin-left: 0; /* Remove left margin for alignment */
+        width: auto; /* Allow content container to adjust width automatically */
+        padding: 0 15px; /* Add padding for text content */
+    }
+
+    h1, .p1, h3 {
+        width: auto; /* Allow text elements to adjust width automatically */
+        margin-left: 0; /* Align text to the start */
+        padding-left: 0; /* Remove left padding for alignment */
+    }
+
+    .image-gallery {
+        margin-left: 0; /* Remove left margin for alignment */
+        width: 100%; /* Allow image gallery to use full width */
+    }
+
+    .image-gallery .image-large {
+        width: 100%; /* Full width for the large image to be responsive */
+        height: auto; /* Adjust height automatically to maintain aspect ratio */
+    }
+}
+

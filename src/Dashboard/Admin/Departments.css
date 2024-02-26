@@ -1,0 +1,100 @@
+.container1 {
+    max-width: 980px;
+    margin-top: 0px;
+    padding: 0px;
+    text-align: center;
+    width: 980px;
+    border: 1px;
+    margin-bottom: 70px;
+  }
+  
+  .hh1 {
+    font-family: "Inter", sans-serif;
+   font-size: 30px;
+     font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 50px; 
+  }
+  
+  .profiles1 {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px solid #c4c3c3;
+    background: #ffffff;
+  }
+  
+  .profile-card1 {
+    border: 0.6px solid rgb(148, 148, 148);
+    width: 22%;
+    height: 140px;
+    padding: 38px, 49px, 32px, 49px;
+  }
+  
+  .profile-image1 a {
+     text-decoration: none;
+     font-size: 30px;
+      -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    margin-top: 30px;
+    width: 172px;
+    height: 172px;
+    border-radius: 50%; 
+  }
+  
+  .profile-info1 {
+    text-align: center;
+  }
+  
+  .profile-info1 h3 {
+    margin-top: 1px;
+  }
+  
+  .profile-info1 p {
+    color: #555;
+  }
+  
+  .cta-section1{
+    width: 50%;
+    height: 340px;
+    background-color: #6a5192; 
+    color: white;
+    padding: 30px 20px;
+  }
+  
+  .cta-section1 .cta-content1 {
+    padding-top: 100px;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .cta-section1 h2 {
+      font-family:"Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  
+    margin-bottom: 20px;
+  }
+  
+  .cta-section1 button {
+    background: white;
+    color: #800080;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-section1 button:hover {
+    background-color: #f0f0f0;
+  }
+  

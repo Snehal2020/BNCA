@@ -41,10 +41,11 @@ function Login() {
         toast.error("Something went wrong");
       }
     };
-
+   
   return (
    <Layout>
-       <div>
+
+ <div>
   <div className="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
     <div className=" overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
       <div className="d-flex align-items-center justify-content-center w-100">
@@ -88,7 +89,7 @@ function Login() {
       </div>
     </div>
   </div>
-</div>
+</div> 
    </Layout>
   )
 }

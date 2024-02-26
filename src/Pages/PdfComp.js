@@ -1,10 +1,14 @@
 import { useState } from "react";
 import { Document, Page } from "react-pdf";
 import { pdfjs } from "react-pdf"
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.js",
-  import.meta.url
-).toString();
+import pdf from './sample.pdf.pdf'
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import Pdf from "./Pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+//   "pdfjs-dist/build/pdf.worker.min.js",
+//   import.meta.url
+// ).toString();
 
 function PdfComp(props) {
   const [numPages, setNumPages] = useState();
@@ -16,30 +20,15 @@ function PdfComp(props) {
 
   return (
     <div className="pdf-div">
-        {/* <p>
-        Page {pageNumber} of {numPages}
-      </p>
       <Document file={props.pdfFile} onLoadSuccess={onDocumentLoadSuccess}>
-        {Array.apply(null, Array(numPages))
-          .map((x, i) => i + 1)
-          .map((page1) => {
-            return (
-              <Page
-                pageNumber={page1}
-                renderTextLayer={false}
-                renderAnnotationLayer={false}
-              />
-            );
-          })}
-      </Document> */}
-
-
-      <Document file=".../" onLoadSuccess={onDocumentLoadSuccess}>
-        <Page pageNumber={pageNumber} />
+      {Array.apply(null,Array(numPages)).map((x,i)=>i+1).map((page)=>{return(
+          <Page key={`page_${pageNumber}`} pageNumber={pageNumber} />
+        )})}
+      
       </Document>
       <p>
         Page {pageNumber} of {numPages}
-      </p>
+      </p> 
    
     </div>
   );

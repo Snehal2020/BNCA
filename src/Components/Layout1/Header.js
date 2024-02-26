@@ -27,6 +27,9 @@ function Header() {
           <Link className="nav-link" to="#">Academics</Link>
         </li>
         <li className="nav-item">
+          <Link className="nav-link" to="/p_details">Details</Link>
+        </li>
+        <li className="nav-item">
           <Link className="nav-link" to="#">Admissions</Link>
         </li>
         <li className="nav-item">
@@ -36,7 +39,7 @@ function Header() {
           <Link className="nav-link" to="#">Research</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/p_list">Students</Link>
+          <Link className="nav-link" to="/dashboard/admin/department/courses">Students</Link>
         </li>
         
        { !auth.token ? (
